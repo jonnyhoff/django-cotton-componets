@@ -1,0 +1,13 @@
+<c-vars type="success" />
+
+<div class="{% if type == 'success' %} .. {% elif type == 'danger' %} .. {% endif %}">
+    {{ slot }}
+</div>
+
+<!--usage>
+# my_view.html
+
+<c-alert>All good!</c-alert>
+<c-alert type="danger">Oh no!</c-alert>
+
+</usage>-->

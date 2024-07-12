@@ -1,0 +1,12 @@
+<select {{ attrs }}>
+    {% for option in options %}
+        <option value="{{ option }}">{{ option }}</option>
+    {% endfor %}
+</select>
+
+<!--usage>
+# my_view.html
+
+<c-select name="country" options="['USA', 'Canada', 'Mexico']" />
+
+</usage>-->

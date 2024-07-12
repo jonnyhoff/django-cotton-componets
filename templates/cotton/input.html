@@ -1,0 +1,19 @@
+<input type="text" class="border ..." {{ attrs }} />
+
+{% if required is True %}
+    <span class="text-red-500">*</span>
+{% endif %}
+
+<!--usage>
+# my_view.html
+
+<c-input name="first_name" placeholder="First name" />
+<c-input name="last_name" placeholder="Last name" value="Smith" readonly  />
+
+---
+
+# my_view.html
+
+<c-input name="first_name" placeholder="First name" required />
+
+</usage>-->

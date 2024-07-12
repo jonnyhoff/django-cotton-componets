@@ -1,0 +1,23 @@
+<c-layouts.base>
+    <div class="sidebar">
+        {{ sidebar }}
+    </div>
+
+    <div class="main">
+        {{ slot }}
+    </div>
+</c-layouts.base>
+
+<!--usage>
+
+<c-layouts.app>
+    <c-slot name="sidebar">
+        <a href="/dashboard">Dashboard</a>
+        ...
+    </c-slot>
+    <div id="dashboard">
+        ...
+    </div>
+</c-layouts.app>
+
+</usage>-->

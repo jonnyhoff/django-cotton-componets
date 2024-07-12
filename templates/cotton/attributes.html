@@ -1,0 +1,14 @@
+<p>It's {{ temperature }}<sup>{{ unit }}</sup> and the condition is {{ condition }}.</p>
+
+<!--usage>
+my_view.html
+
+<c-attributes temperature="25" unit="C" condition="sunny"></c-attributes>
+
+# Template expressions in attributes
+<c-weather temperature="{{ temperature|floatformat:0 }}"
+           unit="{{ unit|default:'c' }}"
+           condition="very {% get_intensity %}"
+/>
+
+</usage>-->
